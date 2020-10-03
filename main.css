@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+body > *{
+    margin: inherit;
+    padding: inherit;
+}
+
+.container{
+    display: block;
+    box-sizing: border-box;
+    width: 600px;
+    height: 800px;
+    padding: 5rem;
+}
+
+.container-background{
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 64px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.container-large{
+    width: 100%;
+    height: 100vh;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.flexbox-center{
+    justify-content: center;
+    align-items: center;
+}
+
+/* navigation */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: .2rem;
+}
+
+nav > a{
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav > a:hover{
+    background-color:  rgb(230, 143, 14);
+    transition: .3s all ease-in-out;
+}
+
+/* sections */
+#home-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bckground.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#purpose-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("purpose-bckground.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#end-section{
+    color: black;
+}
+
+
+/* animation */
+.pop{
+    transition: 1s all ease-in;
+    transform: scale(1.25);
+}
